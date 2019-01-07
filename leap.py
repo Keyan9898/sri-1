@@ -5,6 +5,6 @@ if(s%4==0):
     elif(s%400==0):
         print("yes")
     else:
-        print("No")
+        print("no")
 else:
-    print("No")
+    print("no")
