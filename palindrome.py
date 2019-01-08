@@ -1,0 +1,12 @@
+n=int(input())
+a=n
+r=0
+if(n<=1000):
+    while(n>0):
+        s=n%10
+        r=r*10+s
+        n=n//10
+if(a==r):
+    print("yes")
+else:
+    print("no")
