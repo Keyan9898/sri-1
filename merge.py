@@ -26,6 +26,7 @@ def mergeSort(li):
             j=j+1
             k=k+1
     print(li)
+n=int(input())
 li = list(map(int,input().split()))
 mergeSort(li)
 print(li)
