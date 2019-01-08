@@ -1,28 +1,28 @@
 def mergeSort(li):
     if len(li)>1:
         mid = len(li)//2
-        left = li[:mid]
-        right = li[mid:]
-        mergeSort(left)
-        mergeSort(right)
+        le = li[:mid]
+        ri = li[mid:]
+        mergeSort(le)
+        mergeSort(ri)
         i=0
         j=0
         k=0
-        while i < len(left) and j < len(right):
-            if left[i] < right[j]:
-                li[k]=left[i]
+        while i < len(le) and j < len(ri):
+            if le[i] < ri[j]:
+                li[k]=le[i]
                 i=i+1
             else:
-                li[k]=right[j]
+                li[k]=ri[j]
                 j=j+1
             k=k+1
-        while i < len(left):
-            li[k]=left[i]
+        while i < len(le):
+            li[k]=le[i]
             i=i+1
             k=k+1
 
-        while j < len(right):
-            li[k]=right[j]
+        while j < len(ri):
+            li[k]=ri[j]
             j=j+1
             k=k+1
     print(li)
