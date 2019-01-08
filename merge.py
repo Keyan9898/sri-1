@@ -1,5 +1,4 @@
 def mergeSort(li):
-    print("Splitting ",li)
     if len(li)>1:
         mid = len(li)//2
         left = li[:mid]
@@ -16,6 +15,15 @@ def mergeSort(li):
             else:
                 li[k]=right[j]
                 j=j+1
+            k=k+1
+        while i < len(left):
+            li[k]=left[i]
+            i=i+1
+            k=k+1
+
+        while j < len(right):
+            li[k]=right[j]
+            j=j+1
             k=k+1
     print(li)
 li = list(map(int,input().split()))
