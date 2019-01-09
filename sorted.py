@@ -1,4 +1,8 @@
 n=int(input())
 a=list(map(int,input().split()))
 b=sorted(a)
-print(b)
+for i in range(0,len(b)):
+    if(i==0):
+        print(b[i],end="")
+    else:
+        print("",b[i],end="")
