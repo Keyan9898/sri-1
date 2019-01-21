@@ -1,4 +1,4 @@
-s.s1=map(int,input().split())
+s,s1=map(int,input().split())
 temp=0
 temp=s
 s=s1
