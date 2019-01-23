@@ -4,6 +4,6 @@ for i in s:
     if(i in a ):
         print("yes")
         break
-    else:
-        print('no')
-        break
+else:
+    print('no')
+        
