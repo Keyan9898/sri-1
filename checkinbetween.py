@@ -1,6 +1,6 @@
-s=input()#input
-a=input()
-b=input()
+s=int(input())#input
+a,b=map(int,input().split())
+
 if(s>=a and s<b):
     print("yes")
 else:
