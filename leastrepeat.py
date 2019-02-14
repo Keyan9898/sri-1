@@ -5,7 +5,7 @@ for i in s:
     a=s.count(i)
     d.update({i:a})
     l.append(a)
-print(d)
+
 m=min(l)    
 n=[]
 for x,y in d.items():
