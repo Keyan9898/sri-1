@@ -1,2 +1,2 @@
-n=int(input())
+n=input()
 print(ord(n))#output
